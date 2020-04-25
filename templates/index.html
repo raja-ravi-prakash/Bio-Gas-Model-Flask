@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio Gas</title>
+    <link rel="stylesheet" href="{{url_for('static',filename="material/material-modal.css")}}" />
+    <script src="{{url_for('static',filename="material/material-modal.js")}}"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script defer src="{{url_for('static',filename='main.js')}}"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
+    />
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
+    <link
+      href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <section class="title">
+        <i class="material-icons md">
+          eco
+        </i>
+        <h1>Bio Gas</h1>
+      </section>
+    </div>
+    <div class="banner">
+      <lottie-player
+        src="https://assets4.lottiefiles.com/packages/lf20_jCmeIg.json"
+        background="transparent"
+        speed="1"
+        class="banner-image"
+        loop
+        autoplay
+      ></lottie-player>
+      <h2 class="quote">
+        <pre>
+          ” Progress is impossible without change, 
+            and those who cannot change their
+            minds cannot change anything.” 
+                      
+              -George Bernard Shaw</pre
+        >
+      </h2>
+    </div>
+    <div class="picker">
+      <section class="date">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="https://assets6.lottiefiles.com/packages/lf20_TkGfat.json"
+          background="transparent"
+          speed="1"
+          loop
+          style="width: 100px; height: 100px;"
+          autoplay
+        ></lottie-player>
+        <input type="text" class="field" id="year" placeholder="Year" />
+        <input type="text" class="field" id="month" placeholder="Month" />
+        <input type="text" class="field" id="day" placeholder="Day" />
+      </section>
+      <button onclick="run()" class="mdc-button mdc-button--raised button">
+        <span class="mdc-button__ripple"></span> Compute
+      </button>
+    </div>
+  </body>
+</html>

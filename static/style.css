@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap");
+html,
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  cursor: pointer;
+}
+
+.quote {
+  font-family: "Baloo Bhaina 2", cursive;
+  font-size: 20px;
+}
+
+.material-icons.md {
+  font-size: 30px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  font-size: 15px;
+  font-family: "Muli", sans-serif;
+  color: white;
+  height: 10%;
+  width: 100vw;
+  box-shadow: 2px 2px 5px grey;
+  background-color: #0a090c;
+  animation: opacity 500ms ease-in;
+}
+
+.banner {
+  margin: 20px;
+  margin-top: 50px;
+  border-radius: 20px;
+  width: 90vw;
+  height: 45%;
+  box-shadow: 2px 2px 5px grey;
+  display: flex;
+  animation: opacity 1000ms ease-in;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picker {
+  animation: opacity 1000ms ease-in;
+  width: 90vw;
+  margin: 20px;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.banner-image {
+  width: 25vw;
+  height: 25vw;
+  margin: auto;
+  animation: opacity 500ms ease-in;
+}
+
+.field {
+  font-size: 20px;
+  width: 150px;
+  margin: 5px;
+  height: 40px;
+  padding: 10px;
+  outline: none;
+  border: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 2px solid rgb(46, 46, 46);
+  background-color: rgba(0, 0, 0, 0.014);
+  transition: background-color 100ms ease-in;
+}
+
+.field:focus {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.quote {
+  margin: auto;
+}
+
+@keyframes opacity {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    padding-left: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+  }
+}
